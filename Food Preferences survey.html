@@ -9,6 +9,7 @@
     
     body {
         font-family:sans-serif;
+        background-image: 100%;
     }
     th, td {
         padding:10px;
@@ -22,7 +23,8 @@
         margin: 2px;
     }
 </style>
-<body>
+<body style="background-image: url(https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D);
+background-size: cover;">
     <h1>Food Prefernces - Survey Form</h1>
     <h5>Please fill out and submit the survey form at the earliest</h5>
     <hr />
@@ -48,17 +50,14 @@
                 </td>
             </tr>
             <tr>
-                <td>4.Specify, how often?</td>
-            </tr>
-            <tr>
-                <td colspan="2"> Specify, How often?</td>
+                <td colspan="2">4.Specify, how often?</td>
             </tr>
             <tr>
                 <td colspan="2">
                    <table style="font-size: 0.7em; border: 1px solid;">
                        <thead>
                            <th></th>
-                           <th></th>Every day</th>
+                           <th>Every day</th>
                            <th>a few times a week</th>
                            <th>once a week</th>
                            <th>several times a month</th>
@@ -105,48 +104,28 @@
                                          <td style= "text-align: center";>
                                              <input type="checkbox" id="Chinese" name="food_origin_preference" value="Chinese" />
                                              <label for="Chinese">Chinese</label>
+                                             <input type="checkbox" id="Indian" name="food_origin_preference" value="Indian" />
+                                             <label for="Indian">Indian</label>
+                                             <input type="checkbox" id="Italian" name="food_origin_preference" value="Italian" />
+                                             <label for="Italian">Italian</label>
                                           </td>
                                       </tr>
                                       <tr>
                                           <td>
-                                             <input type="checkbox" id="Indian" name="food_origin_preference" value="Indian" />
-                                             <label for="Indian">Indian</label>
-                                         </td>
-                                      </tr>
-                                       <tr>
-                                            <td>
-                                                <input type="checkbox" id="Italian" name="food_origin_preference" value="Italian" />
-                                                <label for="Italian">Italian</label>
-                                            </td>
-                                      </tr>
-                                      <tr>
-                                            <td>
                                                 <input type="checkbox" id="Spanish" name="food_origin_preference" value="Spanish" />
                                                 <label for="Spanish">Spanish</label>
-                                            </td>
-                                      </tr>
-                                      <tr>
-                                              <td>
-                                                 <input type="checkbox" id="Asian" name="food_origin_preference" value="Asian" />
-                                                 <label for="Asian">Asian</label>
-                                             </td>
-                                      </tr>                                  
-                                      <tr>
-                                              <td>
-                                                 <input type="checkbox" id="Polish" name="food_origin_preference" value="Polish" />
-                                                 <label for="Polish">Polish</label>
-                                               </td>
+                                                <input type="checkbox" id="Asian" name="food_origin_preference" value="Asian" />
+                                                <label for="Asian">Asian</label>
+                                                <input type="checkbox" id="Polish" name="food_origin_preference" value="Polish" />
+                                                <label for="Polish">Polish</label>
+                                         </td>
                                       </tr>
                                       <tr>
                                                <td>
                                                   <input type="checkbox" id="American" name="food_origin_preference" value="American" />
                                                   <label for="American">American</label>
-                                               </td>
-                                      </tr>
-                                      <tr>
-                                              <td>
-                                                 <input type="checkbox" id="Others" name="food_origin_preference" value="Others" />
-                                                 <label for="Others">Others</label>
+                                                  <input type="checkbox" id="Others" name="food_origin_preference" value="Others" />
+                                                  <label for="Others">Others</label>
                                               </td>
                                       </tr>
                                    </table>
@@ -158,12 +137,13 @@
             <tr>
                 <td>6.Given an Option, would you go Vegan?</td>
                 <td>
-                    <input type="radio" name="Vegan" id="Sure" value="Sure" /> <label for="Sure"></label>
-                    <input type="radio" name="Vegan" id="No"  value="No" /> <label for="No"></label>
+                    <input type="radio" name="Vegan" id="Sure" value="Sure" /> <label for="Sure">Sure</label>
+                    <input type="radio" name="Vegan" id="No"  value="No" /> <label for="No">No</label>
                 </td>
           </tr>
           <tr>
-              <td><button>Submit</button><button type="reset">Reset</button></td>
+              <td><button>Submit</button></td>
+              <td><button type="reset">Reset</button></td>
         </tr>
         </table>
     </form>
